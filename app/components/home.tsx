@@ -96,7 +96,7 @@ const Home = () => {
         setError("Graphe non connexe comportant au moins un poids négatif et donc invalide !")
       }
     }else if (!isGraphConnected1(graph)) {
-      setError("Graphe non connecte et donc invalide !")
+      setError("Graphe non connexe et donc invalide !")
     }else{
       setPrimResult(primMST(graph, startNode))
       setError(null)
